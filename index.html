@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Arcade</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1a2e;
+      font-family: 'Segoe UI', sans-serif;
+      color: #eee;
+    }
+    .container { text-align: center; padding: 2rem; }
+    h1 { font-size: 2.5rem; letter-spacing: 4px; color: #e94560; margin-bottom: 0.5rem; }
+    .subtitle { color: #888; margin-bottom: 3rem; font-size: 0.9rem; letter-spacing: 1px; }
+    .games { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .card {
+      background: #16213e;
+      border: 1px solid #0f3460;
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      width: 200px;
+      text-decoration: none;
+      color: #eee;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .card:hover { border-color: #e94560; transform: translateY(-4px); }
+    .card .icon { font-size: 3rem; margin-bottom: 1rem; }
+    .card h2 { font-size: 1rem; letter-spacing: 2px; color: #a8dadc; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ARCADE</h1>
+    <p class="subtitle">Choose a game</p>
+    <div class="games">
+      <a class="card" href="/tictactoe.html">
+        <div class="icon">&#9999;</div>
+        <h2>TIC TAC TOE</h2>
+      </a>
+      <a class="card" href="/galaga.html">
+        <div class="icon">&#128640;</div>
+        <h2>SPACE SHOOTER</h2>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
